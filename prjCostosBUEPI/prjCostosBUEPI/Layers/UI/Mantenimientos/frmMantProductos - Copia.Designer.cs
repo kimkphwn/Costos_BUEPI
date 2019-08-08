@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.SplMantProd = new System.Windows.Forms.SplitContainer();
-            this.PnlList = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.BtnBorrar = new System.Windows.Forms.Button();
             this.TblPnlAtributos = new System.Windows.Forms.TableLayoutPanel();
+            this.DTPFchCmp = new System.Windows.Forms.DateTimePicker();
+            this.TxtPrcCod = new System.Windows.Forms.TextBox();
+            this.txtDescPrd = new System.Windows.Forms.TextBox();
+            this.LblUntMed = new System.Windows.Forms.Label();
+            this.LblDescPrd = new System.Windows.Forms.Label();
             this.lblCodProd = new System.Windows.Forms.Label();
             this.txtCodPrd = new System.Windows.Forms.TextBox();
-            this.LblDescPrd = new System.Windows.Forms.Label();
             this.LblCant = new System.Windows.Forms.Label();
             this.LblPrcCot = new System.Windows.Forms.Label();
             this.LblFchCot = new System.Windows.Forms.Label();
-            this.LblUntMed = new System.Windows.Forms.Label();
             this.LblPrcCmp = new System.Windows.Forms.Label();
             this.LblFchCmp = new System.Windows.Forms.Label();
-            this.txtDescPrd = new System.Windows.Forms.TextBox();
             this.NumUDCant = new System.Windows.Forms.NumericUpDown();
             this.CmbUntMed = new System.Windows.Forms.ComboBox();
-            this.TxtPrcCod = new System.Windows.Forms.TextBox();
             this.TxtPrcCmp = new System.Windows.Forms.TextBox();
             this.DTPFchCot = new System.Windows.Forms.DateTimePicker();
-            this.DTPFchCmp = new System.Windows.Forms.DateTimePicker();
-            this.BtnLimpiar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.BtnSalvar = new System.Windows.Forms.Button();
+            this.PnlList = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,10 +58,10 @@
             this.SplMantProd.Panel1.SuspendLayout();
             this.SplMantProd.Panel2.SuspendLayout();
             this.SplMantProd.SuspendLayout();
-            this.PnlList.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.TblPnlAtributos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUDCant)).BeginInit();
+            this.PnlList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // SplMantProd
@@ -75,7 +75,7 @@
             // 
             this.SplMantProd.Panel1.Controls.Add(this.BtnSalvar);
             this.SplMantProd.Panel1.Controls.Add(this.btnCancelar);
-            this.SplMantProd.Panel1.Controls.Add(this.BtnLimpiar);
+            this.SplMantProd.Panel1.Controls.Add(this.BtnBorrar);
             this.SplMantProd.Panel1.Controls.Add(this.TblPnlAtributos);
             this.SplMantProd.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
             // 
@@ -87,27 +87,32 @@
             this.SplMantProd.TabIndex = 0;
             this.SplMantProd.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.splitContainer1_SplitterMoved);
             // 
-            // PnlList
+            // BtnSalvar
             // 
-            this.PnlList.Controls.Add(this.dataGridView1);
-            this.PnlList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlList.Location = new System.Drawing.Point(0, 0);
-            this.PnlList.Name = "PnlList";
-            this.PnlList.Size = new System.Drawing.Size(348, 304);
-            this.PnlList.TabIndex = 0;
+            this.BtnSalvar.Location = new System.Drawing.Point(62, 262);
+            this.BtnSalvar.Name = "BtnSalvar";
+            this.BtnSalvar.Size = new System.Drawing.Size(113, 32);
+            this.BtnSalvar.TabIndex = 3;
+            this.BtnSalvar.Text = "Salvar";
+            this.BtnSalvar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btnCancelar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Codigo,
-            this.Nombre,
-            this.PrecioCompra});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(348, 304);
-            this.dataGridView1.TabIndex = 0;
+            this.btnCancelar.Location = new System.Drawing.Point(181, 262);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(113, 32);
+            this.btnCancelar.TabIndex = 2;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.Location = new System.Drawing.Point(300, 262);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(113, 32);
+            this.BtnBorrar.TabIndex = 1;
+            this.BtnBorrar.Text = "Borrar";
+            this.BtnBorrar.UseVisualStyleBackColor = true;
             // 
             // TblPnlAtributos
             // 
@@ -145,6 +150,53 @@
             this.TblPnlAtributos.Size = new System.Drawing.Size(410, 246);
             this.TblPnlAtributos.TabIndex = 0;
             // 
+            // DTPFchCmp
+            // 
+            this.DTPFchCmp.Location = new System.Drawing.Point(208, 213);
+            this.DTPFchCmp.Name = "DTPFchCmp";
+            this.DTPFchCmp.Size = new System.Drawing.Size(197, 20);
+            this.DTPFchCmp.TabIndex = 14;
+            // 
+            // TxtPrcCod
+            // 
+            this.TxtPrcCod.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtPrcCod.Location = new System.Drawing.Point(209, 125);
+            this.TxtPrcCod.Name = "TxtPrcCod";
+            this.TxtPrcCod.Size = new System.Drawing.Size(196, 20);
+            this.TxtPrcCod.TabIndex = 11;
+            this.TxtPrcCod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDescPrd
+            // 
+            this.txtDescPrd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescPrd.Location = new System.Drawing.Point(208, 35);
+            this.txtDescPrd.Name = "txtDescPrd";
+            this.txtDescPrd.Size = new System.Drawing.Size(198, 20);
+            this.txtDescPrd.TabIndex = 1;
+            this.txtDescPrd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LblUntMed
+            // 
+            this.LblUntMed.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LblUntMed.AutoSize = true;
+            this.LblUntMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblUntMed.Location = new System.Drawing.Point(64, 95);
+            this.LblUntMed.Name = "LblUntMed";
+            this.LblUntMed.Size = new System.Drawing.Size(138, 20);
+            this.LblUntMed.TabIndex = 6;
+            this.LblUntMed.Text = "Unidad de Medida";
+            // 
+            // LblDescPrd
+            // 
+            this.LblDescPrd.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.LblDescPrd.AutoSize = true;
+            this.LblDescPrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDescPrd.Location = new System.Drawing.Point(69, 35);
+            this.LblDescPrd.Name = "LblDescPrd";
+            this.LblDescPrd.Size = new System.Drawing.Size(133, 20);
+            this.LblDescPrd.TabIndex = 2;
+            this.LblDescPrd.Text = "Nombre Producto";
+            // 
             // lblCodProd
             // 
             this.lblCodProd.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -166,17 +218,6 @@
             this.txtCodPrd.Size = new System.Drawing.Size(195, 20);
             this.txtCodPrd.TabIndex = 1;
             this.txtCodPrd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // LblDescPrd
-            // 
-            this.LblDescPrd.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.LblDescPrd.AutoSize = true;
-            this.LblDescPrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDescPrd.Location = new System.Drawing.Point(69, 35);
-            this.LblDescPrd.Name = "LblDescPrd";
-            this.LblDescPrd.Size = new System.Drawing.Size(133, 20);
-            this.LblDescPrd.TabIndex = 2;
-            this.LblDescPrd.Text = "Nombre Producto";
             // 
             // LblCant
             // 
@@ -211,17 +252,6 @@
             this.LblFchCot.TabIndex = 5;
             this.LblFchCot.Text = "Fecha Cotizacion";
             // 
-            // LblUntMed
-            // 
-            this.LblUntMed.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.LblUntMed.AutoSize = true;
-            this.LblUntMed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUntMed.Location = new System.Drawing.Point(64, 95);
-            this.LblUntMed.Name = "LblUntMed";
-            this.LblUntMed.Size = new System.Drawing.Size(138, 20);
-            this.LblUntMed.TabIndex = 6;
-            this.LblUntMed.Text = "Unidad de Medida";
-            // 
             // LblPrcCmp
             // 
             this.LblPrcCmp.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -244,15 +274,6 @@
             this.LblFchCmp.TabIndex = 8;
             this.LblFchCmp.Text = "Fecha Compra";
             // 
-            // txtDescPrd
-            // 
-            this.txtDescPrd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescPrd.Location = new System.Drawing.Point(208, 35);
-            this.txtDescPrd.Name = "txtDescPrd";
-            this.txtDescPrd.Size = new System.Drawing.Size(198, 20);
-            this.txtDescPrd.TabIndex = 1;
-            this.txtDescPrd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // NumUDCant
             // 
             this.NumUDCant.Location = new System.Drawing.Point(208, 63);
@@ -267,15 +288,6 @@
             this.CmbUntMed.Name = "CmbUntMed";
             this.CmbUntMed.Size = new System.Drawing.Size(197, 21);
             this.CmbUntMed.TabIndex = 10;
-            // 
-            // TxtPrcCod
-            // 
-            this.TxtPrcCod.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.TxtPrcCod.Location = new System.Drawing.Point(209, 125);
-            this.TxtPrcCod.Name = "TxtPrcCod";
-            this.TxtPrcCod.Size = new System.Drawing.Size(196, 20);
-            this.TxtPrcCod.TabIndex = 11;
-            this.TxtPrcCod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TxtPrcCmp
             // 
@@ -294,39 +306,27 @@
             this.DTPFchCot.Size = new System.Drawing.Size(197, 20);
             this.DTPFchCot.TabIndex = 13;
             // 
-            // DTPFchCmp
+            // PnlList
             // 
-            this.DTPFchCmp.Location = new System.Drawing.Point(208, 213);
-            this.DTPFchCmp.Name = "DTPFchCmp";
-            this.DTPFchCmp.Size = new System.Drawing.Size(197, 20);
-            this.DTPFchCmp.TabIndex = 14;
+            this.PnlList.Controls.Add(this.dataGridView1);
+            this.PnlList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlList.Location = new System.Drawing.Point(0, 0);
+            this.PnlList.Name = "PnlList";
+            this.PnlList.Size = new System.Drawing.Size(348, 304);
+            this.PnlList.TabIndex = 0;
             // 
-            // BtnLimpiar
+            // dataGridView1
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(300, 262);
-            this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(113, 32);
-            this.BtnLimpiar.TabIndex = 1;
-            this.BtnLimpiar.Text = "Limpiar";
-            this.BtnLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(181, 262);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 32);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // BtnSalvar
-            // 
-            this.BtnSalvar.Location = new System.Drawing.Point(62, 262);
-            this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(113, 32);
-            this.BtnSalvar.TabIndex = 3;
-            this.BtnSalvar.Text = "Salvar";
-            this.BtnSalvar.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Nombre,
+            this.PrecioCompra});
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(348, 304);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Codigo
             // 
@@ -359,11 +359,11 @@
             this.SplMantProd.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SplMantProd)).EndInit();
             this.SplMantProd.ResumeLayout(false);
-            this.PnlList.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.TblPnlAtributos.ResumeLayout(false);
             this.TblPnlAtributos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumUDCant)).EndInit();
+            this.PnlList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -392,7 +392,7 @@
         private System.Windows.Forms.DateTimePicker DTPFchCot;
         private System.Windows.Forms.Button BtnSalvar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button BtnLimpiar;
+        private System.Windows.Forms.Button BtnBorrar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioCompra;
