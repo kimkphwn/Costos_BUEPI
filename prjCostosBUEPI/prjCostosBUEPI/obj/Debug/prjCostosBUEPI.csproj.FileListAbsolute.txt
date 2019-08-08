@@ -1,0 +1,12 @@
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\bin\Debug\prjCostosBUEPI.exe.config
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.csprojResolveAssemblyReference.cache
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.Properties.Resources.resources
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.csproj.GenerateResource.Cache
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\bin\Debug\prjCostosBUEPI.exe
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\bin\Debug\prjCostosBUEPI.pdb
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.exe
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.pdb
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\bin\Debug\Data\BUEPICostos.mdf
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\bin\Debug\Data\BUEPICostos_log.ldf
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.frmPrincipal.resources
+C:\Users\Stevens\Documents\Proyectos Personales\Costos Pilar\prjCostosBUEPI\prjCostosBUEPI\obj\Debug\prjCostosBUEPI.Layers.UI.Mantenimientos.frmMantProductos.resources
